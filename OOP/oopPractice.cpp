@@ -94,6 +94,17 @@ class Marketer: public Employee
     }
 };
 
+class Accountant: public Employee
+{
+    public:
+    int money;
+    Accountant (string name, string com, int age, int AmountofMoney) :Employee(name, com, age)
+    {
+        money= AmountofMoney;
+        cout<<"\nA constructor of Accountant class was created !!!";
+    }
+};
+
 int main()
 {
     Developer d=Developer("Dang Gia Thinh","Techcompany",19,"C++");
