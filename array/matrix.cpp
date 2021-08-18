@@ -41,7 +41,7 @@ void EvenOdd(int a[], int size, int count)
     cout << "The number of the evennum is: " << count << endl;
 }
 
-//Check chinhphuong
+//Check Square Number
 void checkchinhPhuong(int a[], int size)
 {
     int cnt = 0;
@@ -53,10 +53,10 @@ void checkchinhPhuong(int a[], int size)
                 cnt++;
         }
     }
-    cout << "So chinh phuong la: " << cnt << endl;
+    cout << "Square Number is: " << cnt << endl;
 }
 
-bool checkchinhPhuong(int a)
+bool checkSquareNumber(int a)
 {
     for (int j = 1; j < a; j++)
     {
@@ -66,8 +66,8 @@ bool checkchinhPhuong(int a)
     return 0;
 }
 
-//check songuyento
-bool checkNguyento(int a)
+//check Prime
+bool checkPrime(int a)
 {
     int cnt = 0;
     if (a == 0 || a == 1)
