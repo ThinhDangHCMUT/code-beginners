@@ -275,8 +275,8 @@ int main()
     cout << "Enter the number of array: ";
     cin >> n;
 
-    nhapMang(arr, n);
-    xuatMang(arr, n);
+    EnterArray(arr, n);
+    ExportArray(arr, n);
     // int Count;
     // numEven(arr,n,Count);
     // chinhPhuong(arr,n);
