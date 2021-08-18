@@ -6,7 +6,7 @@ using namespace std;
 
 #define MAX 1000
 
-void nhapMang(int a[], int size)
+void EnterArray(int a[], int size)
 {
     //srand(time(NULL));
 
@@ -17,7 +17,7 @@ void nhapMang(int a[], int size)
     }
 }
 
-void xuatMang(int a[], int size)
+void ExportArray(int a[], int size)
 {
     cout << "------------" << endl;
     cout << "Array for " << size << " element is: ";
@@ -28,7 +28,8 @@ void xuatMang(int a[], int size)
     cout << endl;
 }
 
-void numEven(int a[], int size, int count)
+//check Even or Odd element in array 
+void EvenOdd(int a[], int size, int count)
 {
 
     count = 0;
@@ -40,7 +41,8 @@ void numEven(int a[], int size, int count)
     cout << "The number of the evennum is: " << count << endl;
 }
 
-void chinhPhuong(int a[], int size)
+//Check chinhphuong
+void checkchinhPhuong(int a[], int size)
 {
     int cnt = 0;
     for (int i = 0; i < size; i++)
@@ -64,6 +66,7 @@ bool checkchinhPhuong(int a)
     return 0;
 }
 
+//check songuyento
 bool checkNguyento(int a)
 {
     int cnt = 0;
@@ -82,7 +85,7 @@ bool checkNguyento(int a)
         return 1;
 }
 
-
+//check Fibonacci Array
 bool checkFibo(int a[], int Fibo[], int n)
 {
     int cnt=0;
@@ -97,6 +100,7 @@ bool checkFibo(int a[], int Fibo[], int n)
     return 0;
 }
 
+//Sorting Array
 void sort(int a[], int size)
 {
     int l=0, r=-1;
@@ -144,6 +148,7 @@ void sort(int a[], int size)
     
 }
 
+//Bubble Sorting
 void bubbleSort(int a[], int size)
 {
     for (int i = 0; i < size - 1; i++)
@@ -156,6 +161,7 @@ void bubbleSort(int a[], int size)
             }
 }
 
+//Sum of three last elements in array
 void SumOfThree(int a[], int size)
 {
     int sum = a[size - 1] + a[size - 2];
@@ -191,6 +197,7 @@ void SumOfThree(int a[], int size)
     cout << "The maxsum of three element in array is: " << sum << endl;
 }
 
+//Find the position of the nguyento element in array
 int checkNguyento(int a[], int n)
 {
     int pos = -1;
@@ -222,7 +229,7 @@ void firstNum(int a[], int n)
 
     cout<<"Sum of them: "<<s<<endl;
 }
-// kiem tra phan tu co hai lan xuat hien
+// Check the element that exist two times in array
 void secondNum(int a[], int n)
 {
     int c=0;
@@ -246,7 +253,8 @@ void secondNum(int a[], int n)
 
     cout<<"The number of the element had two time in arrays: "<<count<<endl;
 }
-//kiem tra phan tu trung vi
+
+//Check the medium element
 int checkMedian(int a[],int n)
 {
     int MedianNum;
@@ -257,6 +265,8 @@ int checkMedian(int a[],int n)
     return MedianNum;
 }
 
+
+//MAIN
 int main()
 {
     int arr[MAX];
