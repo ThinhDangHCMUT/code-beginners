@@ -42,7 +42,7 @@ void EvenOdd(int a[], int size, int count)
 }
 
 //Check Square Number
-void checkchinhPhuong(int a[], int size)
+void checkSquareNumber(int a[], int size)
 {
     int cnt = 0;
     for (int i = 0; i < size; i++)
@@ -198,12 +198,12 @@ void SumOfThree(int a[], int size)
 }
 
 //Find the position of the nguyento element in array
-int checkNguyento(int a[], int n)
+int FindPrimeNumber(int a[], int n)
 {
     int pos = -1;
     for (int i = 0; i < n; i++)
     {
-        if (checkNguyento(a[i]))
+        if (checkPrime(a[i]))
         {
             pos = i;
             break;
@@ -272,18 +272,18 @@ int main()
     int arr[MAX];
     int n;
     int pos;
-    cout << "Enter the number of array: ";
+    cout << "Enter amount of array: ";
     cin >> n;
 
     EnterArray(arr, n);
     ExportArray(arr, n);
     // int Count;
     // numEven(arr,n,Count);
-    // chinhPhuong(arr,n);
+    // checkSquareNumber(arr,n);
     // bubbleSort(arr,n);
-    // xuatMang(arr,n);
+    // ExportMang(arr,n);
     // SumOfThree(arr,n);
-    // pos = checkNguyento(arr, n);
+    // pos = checkPrime(arr, n);
     // cout << "The position of the Nt element in array: " << pos << endl;
     
     //Declare Fibonacci array
@@ -298,8 +298,8 @@ int main()
     // if(checkFibo(arr,f,n)) cout<<"Right! "<<endl;
     // else cout<<"Not! "<<endl;
   
-   //sort(arr,n);
+    //sort(arr,n);
     //firstNum(arr,n);
-    secondNum(arr,n);
+    //secondNum(arr,n);
     return 0;
 }
